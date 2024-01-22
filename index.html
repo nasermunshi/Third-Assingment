@@ -5,10 +5,85 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Document</title>
+   <!-- daisy ui link    -->
       <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
       <script src="https://cdn.tailwindcss.com"></script>    
 </head>
 <body>
-                    
+ <header>
+  <!-- nav section start  -->
+<nav>                  
+<div class="navbar bg-base-100 pt-14 pl-32 pr-32">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden ">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      </div>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+        <li><a>About</a></li>
+      <li><a>Pages</a></li>    
+      <li><a>Blog</a></li>
+      <li><a>Contact</a></li>
+      </ul>
+    </div>
+    <a class="btn btn-ghost text-3xl font-bold ">Hockey’s</a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+      <li class="text-red-700"><a>Home</a></li>    
+      <li><a>About</a></li>
+      <li><a>Pages</a></li>    
+      <li><a>Blog</a></li>
+      <li><a>Contact</a></li>    
+     
+    </ul>
+  </div>
+  <div class="navbar-end gap-3 ">
+  <img src="images/Frame.jpg" alt="">  
+    <a class="btn bg-[#FF4240] text-fuchsia-50 pl-7 pr-7 ">Get Ticket</a>
+  </div>
+</div>
+</nav>
+ </header>
+<!-- nav section close -->
+
+<!-- main section stsart -->
+ <main>
+  <!-- slid section -->
+  <div class="carousel w-full h-[550px] ">
+    <div id="slide1" class="carousel-item relative w-full">
+      <img src="/images/1.png" class="w-full" />
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide4" class="btn btn-circle">❮</a> 
+        <a href="#slide2" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <div id="slide2" class="carousel-item relative w-full">
+      <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide1" class="btn btn-circle">❮</a> 
+        <a href="#slide3" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <div id="slide3" class="carousel-item relative w-full">
+      <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide2" class="btn btn-circle">❮</a> 
+        <a href="#slide4" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <div id="slide4" class="carousel-item relative w-full">
+      <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide3" class="btn btn-circle">❮</a> 
+        <a href="#slide1" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+  </div>
+
+
+ </main> 
+ 
+
 </body>
 </html>
